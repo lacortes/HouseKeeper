@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- Pic, Name, Date-->
+    <LinearLayout
+        android:layout_weight="40"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/announcement_avatar_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_account"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/announcement_name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                tools:text="Firstname Lastname"/>
+
+            <TextView
+                android:id="@+id/announcement_date_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Jul 7"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- end Pic, Name, Date-->
+
+
+    <TextView
+        android:id="@+id/announcement_msg_textView"
+        android:layout_weight="60"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:text="We're so excited for this weekend's concert -- Mozart, live in, person! October 12, 13, 14, 15pm ony $15!"/>
+
+
+</LinearLayout>

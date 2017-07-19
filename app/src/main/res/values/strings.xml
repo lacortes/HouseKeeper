@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">HouseKeeper</string>
+
+    <!--activity_login_screen-->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name_or_email">Enter email</string>
+    <string name="password">Password</string>
+    <string name="incorrect">Incorrect email/password !!</string>
+
+    <!-- activity_login_screen -->
+    <string name="enter_email">Enter email</string>
+    <string name="enter_user_first">Enter first name</string>
+    <string name="enter_user_last">Enter last name</string>
+    <string name="enter_pass">Enter password</string>
+    <string name="done">Submit</string>
+    <string name="back">Back</string>
+
+    <!-- activity sign up screen -->
+    <string name="check_box">Administrator</string>
+
+    <!-- home_layout -->
+    <string name="home">Home</string>
+    <string name="add_announcement">New Announcement</string>
+    <string name="menu_logout">Logout</string>
+    <string name="tasks">Tasks</string>
+    <string name="announcements">Announcements</string>
+    <string name="week_to_clean">Turn to Clean</string>
+    <string name="bills">Bills</string>
+    <string name="menu_about">About</string>
+    <string name="menu_create_groups">Groups</string>
+
+    <!-- PostAnnouncemnt Fragment -->
+    <string name="post_announcemnt_title">Post Announcement</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Tasks -->
+    <string name="cleaned">Cleaned</string>
+
+    <!--Bills Fragment-->
+    <string name="add_bill">Add Bill</string>
+
+    <!-- BillMainList Adapter-->
+    <string name="bill_paid">Paid</string>
+
+    <!-- addNewBill Fragment -->
+    <string name="enter_bill_name">Bill Name</string>
+    <string name="enter_bill_amount">Bill amount</string>
+    <string name="pick_date">Pick Date</string>
+</resources>

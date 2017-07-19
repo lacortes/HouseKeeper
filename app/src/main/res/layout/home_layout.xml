@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="Month Name"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Cleaning -->
+    <LinearLayout
+        android:layout_weight="25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+
+        <!-- Person 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/week_to_clean"
+                tools:text="Turn to Clean"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/person_1_textView"
+                    android:layout_gravity="center"
+                    android:layout_weight="60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Person 1"
+                    tools:text="Person 1"/>
+
+                <ImageView
+                    android:id="@+id/person_1_status"
+                    android:padding="0dp"
+                    android:layout_weight="40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_mark"/>
+
+            </LinearLayout>
+
+            <!--Person 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/person_2_textView"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_weight="60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Person 2"
+                    tools:text="Person 2"/>
+
+                <ImageView
+                    android:padding="0dp"
+                    android:layout_weight="40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_not_done"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bills -->
+
+    <TextView
+        android:gravity="bottom"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="@string/announcements"
+        tools:text="Announcements"/>
+
+    <TextView
+        android:id="@+id/home_no_announce_textView"
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No Announcements"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/announce_listView"
+        android:dividerHeight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:minHeight="40dp"
+        android:layout_weight="55"></ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <!--&lt;!&ndash; Pic, Name, Date&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_weight="10"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:id="@+id/announcement_avatar_imageView"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/ic_account"/>-->
+
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:id="@+id/announcement_name_textView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="Firstname Lastname"-->
+            <!--tools:text="Firstname Lastname"/>-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash; end Pic, Name, Date&ndash;&gt;-->
+
+    <EditText
+        android:id="@+id/input_EditText"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input here"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/cancel_post_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/submit_post_Button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/submit"/>
+    </LinearLayout>
+
+</LinearLayout>

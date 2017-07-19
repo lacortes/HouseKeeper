@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"/>
+
+        <EditText
+            android:id="@+id/sign_up_first_name"
+            android:inputType="textNoSuggestions"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_user_first"/>
+
+        <EditText
+            android:id="@+id/sign_up_last_name"
+            android:inputType="textNoSuggestions"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_user_last"/>
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_pass"/>
+
+       <CheckBox
+           android:id="@+id/sign_up_admin_checkBox"
+           android:layout_marginLeft="30dp"
+           android:layout_marginBottom="15dp"
+           android:text="@string/check_box"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/sign_up_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/back"/>
+
+            <Button
+                android:id="@+id/sign_up_submit_button"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/done"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
